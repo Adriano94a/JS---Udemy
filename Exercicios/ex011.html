@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páis - Condições</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Sua nacionalidade:<input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtn = document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>você é nativo do <strong> ${txtnac} </strong></p>`
+            if (txtn == Brasi) {
+                txtn.innerHTML = `<p>Você é tupiniquim</p>`
+            }
+            
+            res.innerHTML += `Boa nacionalista`
+
+            }
+    </script>
+    
+</body>
+</html>
